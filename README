@@ -1,0 +1,123 @@
+# 🧪 Automação Cypress - DemoQA / SauceDemo
+
+![Cypress](https://img.shields.io/badge/Cypress-Automation-brightgreen)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
+Projeto de automação de testes web utilizando Cypress.
+
+Projeto criado para prática e evolução em automação de testes web com foco em boas práticas de QA Automation.
+
+---
+
+# 🚀 Tecnologias utilizadas
+
+- Cypress
+- JavaScript
+- Node.js
+- Mochawesome
+
+---
+
+# 📂 Estrutura do projeto
+
+```bash
+cypress/
+ ├── e2e
+ ├── fixtures
+ ├── pages
+ ├── reports
+ ├── screenshots
+ ├── support
+ └── videos
+```
+
+---
+
+# ✅ Funcionalidades automatizadas
+
+- Preenchimento de formulário
+- Login automatizado
+- Assertions de validação
+- Captura de screenshots
+- Gravação automática de vídeos
+- Geração de relatórios Mochawesome
+
+---
+
+# 🧠 Conceitos aplicados
+
+- Page Object Model (POM)
+- Separação de responsabilidades
+- Uso de fixtures
+- Uso de variáveis de ambiente
+- Evidências automáticas
+- Custom Commands
+- BeforeEach
+- Assertions com Cypress
+
+---
+
+# ▶️ Como executar o projeto
+
+## Instalar dependências
+
+```bash
+npm install
+```
+
+## Abrir Cypress
+
+```bash
+npx cypress open
+```
+
+## Executar testes completos
+
+```bash
+npx cypress run
+```
+
+---
+
+# ⚙️ Pipeline automatizado
+
+## Executar pipeline completo
+
+O comando abaixo executa:
+
+- limpeza de relatórios antigos
+- execução automática dos testes
+- geração de screenshots
+- gravação de vídeos
+- compilação do relatório HTML
+
+```bash
+npm run executar:tudo
+```
+
+---
+
+# 📸 Evidências
+
+O Cypress gera automaticamente:
+
+- Screenshots
+- Vídeos
+- Logs de execução
+- Relatórios Mochawesome
+
+---
+
+# 📊 Relatórios
+
+Os relatórios são gerados automaticamente na pasta:
+
+```bash
+cypress/reports/mochawesome-report/report.html
+```
+
+---
+
+# 👨‍💻 Autor
+
+Alessandro Carvalho
