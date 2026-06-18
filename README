@@ -3,9 +3,43 @@
 ![Cypress](https://img.shields.io/badge/Cypress-Automation-brightgreen)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
-Projeto de automação de testes web utilizando Cypress.
+Projeto de automação de testes web utilizando Cypress, criado para prática e evolução em boas práticas de QA Automation.
 
-Projeto criado para prática e evolução em automação de testes web com foco em boas práticas de QA Automation.
+---
+
+# 📊 Demonstração Visual & Evidências de Sucesso
+
+Esta seção apresenta a automação funcionando em tempo real e os relatórios técnicos que comprovam a qualidade e estabilidade do framework.
+
+### 🎬 Execução Completa dos Testes End-to-End (E2E)
+O vídeo abaixo (formato GIF) mostra o pipeline de testes automatizados rodando a execução completa de ponta a ponta, incluindo a interação com formulários e fluxos de login no SauceDemo.
+
+<!-- ARRASTE SEU GIF ANIMADO COM TUDO RODANDO EXATAMENTE NA LINHA ABAIXO -->
+
+
+### 📸 Screenshots Automáticos e Geração de Evidências
+Este vídeo demonstra a capacidade do framework de gerar automaticamente evidências visuais de cada etapa do teste, incluindo capturas de tela instantâneas para auditoria.
+
+<!-- ARRASTE SEU GIF DE SCREENSHOTS AUTOMÁTICOS EXATAMENTE NA LINHA ABAIXO -->
+
+
+### 📊 Relatório Técnico de Cobertura de Testes
+Um print corporativo e detalhado do relatório **Mochawesome** gerado dinamicamente após a execução do pipeline, comprovando 100% de sucesso nos assertions técnicos.
+
+<!-- ARRASTE SEU PRINT Screenshot 2026-06-18 180759.png (DO MOCHAWESOME) EXATAMENTE NA LINHA ABAIXO -->
+
+
+### ⚙️ Configuração do Framework e Geração de Evidências
+Este print exibe as boas práticas aplicadas no arquivo de configuração do Cypress para geração dinâmica de vídeos e capturas de tela.
+
+<!-- ARRASTE SEU PRINT Screenshot 2026-06-18 180926.jpg (DO CYPRESS.CONFIG.JS) EXATAMENTE NA LINHA ABAIXO -
+
+
+### 💻 Estrutura e Page Objects (Código Limpo)
+Um print do VS Code focado na estrutura de pastas organizada (POM) e nos Page Objects e comandos customizados que garantem reuso de código e manutenibilidade.
+
+<!-- ARRASTE SEU PRINT Screenshot 2026-06-18 180409.png (DO VS CODE) EXATAMENTE NA LINHA ABAIXO -->
+
 
 ---
 
@@ -14,7 +48,7 @@ Projeto criado para prática e evolução em automação de testes web com foco 
 - Cypress
 - JavaScript
 - Node.js
-- Mochawesome
+- Mochawesome (com mochawesome-reporter e plugin)
 
 ---
 
@@ -23,101 +57,16 @@ Projeto criado para prática e evolução em automação de testes web com foco 
 ```bash
 cypress/
  ├── e2e
+ │   ├── formulario.cy.js
+ │   ├── login.cy.js
+ │   └── spec.cy.js
  ├── fixtures
+ │   ├── dadosformulario.cy.js
+ │   └── example.json
  ├── pages
+ │   ├── formularioPage.js
+ │   └── loginPage.js
  ├── reports
  ├── screenshots
  ├── support
  └── videos
-```
-
----
-
-# ✅ Funcionalidades automatizadas
-
-- Preenchimento de formulário
-- Login automatizado
-- Assertions de validação
-- Captura de screenshots
-- Gravação automática de vídeos
-- Geração de relatórios Mochawesome
-
----
-
-# 🧠 Conceitos aplicados
-
-- Page Object Model (POM)
-- Separação de responsabilidades
-- Uso de fixtures
-- Uso de variáveis de ambiente
-- Evidências automáticas
-- Custom Commands
-- BeforeEach
-- Assertions com Cypress
-
----
-
-# ▶️ Como executar o projeto
-
-## Instalar dependências
-
-```bash
-npm install
-```
-
-## Abrir Cypress
-
-```bash
-npx cypress open
-```
-
-## Executar testes completos
-
-```bash
-npx cypress run
-```
-
----
-
-# ⚙️ Pipeline automatizado
-
-## Executar pipeline completo
-
-O comando abaixo executa:
-
-- limpeza de relatórios antigos
-- execução automática dos testes
-- geração de screenshots
-- gravação de vídeos
-- compilação do relatório HTML
-
-```bash
-npm run executar:tudo
-```
-
----
-
-# 📸 Evidências
-
-O Cypress gera automaticamente:
-
-- Screenshots
-- Vídeos
-- Logs de execução
-- Relatórios Mochawesome
-
----
-
-# 📊 Relatórios
-
-Os relatórios são gerados automaticamente na pasta:
-
-```bash
-cypress/reports/mochawesome-report/report.html
-```
-
----
-
-# 👨‍💻 Autor
-
-Alessandro Carvalho
